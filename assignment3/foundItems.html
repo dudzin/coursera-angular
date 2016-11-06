@@ -1,0 +1,7 @@
+<div class= 'container'>
+<div ng-repeat = 'item in ctrl.foundItems' class="col-sm-2 form-group">
+  <button class = 'btn btn-primary' ng-click = "ctrl.onRemove({index: $index});">Don't want this one!</button>
+  <p>{{item.name}},{{item.short_name}}</p>
+  <p>{{item.description}}</p>
+</div>
+<div class = "error">Nothing found</div>
