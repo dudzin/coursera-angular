@@ -1,0 +1,7 @@
+<p class="header">Items</p>
+<ul>
+  <li ng-repeat = "item in $ctrl.items.menu_items" >
+    <p ><span class="header">{{item.name}}</span> : {{item.description}}</p>
+  </li>
+</ul>
+<ui-view></ui-view>

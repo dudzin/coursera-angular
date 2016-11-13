@@ -1,0 +1,8 @@
+<p style="font-weight: bold;">Categories</p>
+<div class ="container">
+<div class = "col-md-2 col-sm-2 col-xs-2 cat-box"  ng-repeat = "category in $ctrl.categories" ui-sref="categories.items({categoryShortName: category.short_name})">
+    <p>{{category.name}}</p>
+</div>
+</dv>
+<div class="clearfix hidden-sm-up"></div>
+<ui-view></ui-view>

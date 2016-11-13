@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app='MenuApp'>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <title>Intro to ui-router</title>
+  </head>
+  <body>
+    <h1>MenuApp</h1>
+
+    <a ui-sref="home" ui-sref-active="activeTab">Home</a>
+    <a ui-sref="categories" ui-sref-active="activeTab">Categories</a>
+
+    <ui-view></ui-view>
+
+    <!-- Libraries -->
+    <script src="lib/angular.min.js"></script>
+    <script src="lib/angular-ui-router.min.js"></script>
+
+    <!-- Modules -->
+    <script src="src/menuapp.module.js"></script>
+    <script src="src/routes.js"></script>
+    <script src="src/categories.component.js"></script>
+    <script src="src/main-categories.controller.js"></script>
+    <script src="src/main-items.controller.js"></script>
+    <script src="src/data.module.js"></script>
+    <script src="src/items.component.js"></script>
+    <script src="src/menudata.service.js"></script>
+  </body>
+</html>
