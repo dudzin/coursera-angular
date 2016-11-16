@@ -1,0 +1,15 @@
+<div class = "container">
+  <p ng-if = "infoCtrl.user === undefined" ui-sref="public.signup">
+Not Signed Up Yet. Sign up Now!
+  </p>
+
+  <div ng-if = "infoCtrl.user !== undefined">
+    <p>First Name: {{infoCtrl.user.firstName}}</p>
+    <p>Last Name: {{infoCtrl.user.lastName}}</p>
+    <p>Email: {{infoCtrl.user.email}}</p>
+    <p>Phone Num: {{infoCtrl.user.phoneNum}}</p>
+    <p>Your favourite item is: {{infoCtrl.user.item.name}}</p>
+    <p>Description:{{infoCtrl.user.item.description}}</p>
+    <img ng-src="{{infoCtrl.url}}/images/{{infoCtrl.user.item.short_name}}" alt="Image not available" />
+  <div>
+</div>
